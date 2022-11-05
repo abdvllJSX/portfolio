@@ -1,0 +1,17 @@
+
+
+:root{
+    --secondary-backgoundcolor: #E6DACE:
+    --primary-backgroundcolor: #F4ECE6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+}
