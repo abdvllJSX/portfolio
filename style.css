@@ -1,17 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,800&display=swap");
 
-
-:root{
-    --secondary-backgoundcolor: #E6DACE:
-    --primary-backgroundcolor: #F4ECE6;
+:root {
+  --secondary-backgoundcolor: #e6dace;
+  --primary-backgroundcolor: #f4ece6;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-size: 10px;
-    font-family: Arial,Helvetica,sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+/* header */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav .container {
+  display: flex;
+  padding: 50px 50px;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+
+.blue-box {
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  gap: 10px;
+}
+
+.align-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: blue;
+}
+
+h1.logo :hover {
+  color: black;
+}
+
+h1.logo a {
+  font-size: 27px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 7px 7px;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+/* body */
+
+.side-bar {
+  padding-top: 100px;
+  width: 39%;
+  background-color: var(--secondary-backgoundcolor);
+  height: 800px;
+  position: absolute;
+}
+
+.appendix {
+  margin-top: 200px;
+  background-color: var(--primary-backgroundcolor);
+  width: 330px;
+  position: absolute;
+  left: 19%;
+  display: grid;
+  place-items: center;
+}
+
+.appendix img {
+  border-radius: 50%;
+  width: 200px;
+  margin: 23px 0;
+}
+
+.line {
+  width: 50px;
+  height: 1.5px;
+  background-color: blue;
+  margin: 20px 0;
+}
+
+.appendix p {
+  font-weight: 250;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.social-icon {
+  background-color: white;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-context {
+  position: absolute;
+  left: 440px;
+  top: 350px;
+}
+
+.main-context h1 {
+  font-size: 6rem;
+}
+
+
+.main-context p{
+    font-size: 23px;
+    margin-bottom: 30px;
 }
