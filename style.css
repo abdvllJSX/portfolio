@@ -82,21 +82,24 @@ h1.logo a {
 }
 
 /* body */
-
+.main-context{
+  min-height: 100px;
+  position: absolute;
+}
 .side-bar {
   padding-top: 100px;
   width: 39%;
   background-color: var(--secondary-backgoundcolor);
-  height: 800px;
-  position: absolute;
+  height: 910px;
+  position: relative;
 }
 
 .appendix {
-  margin-top: 200px;
+  top: 350px;
   background-color: var(--primary-backgroundcolor);
-  width: 330px;
+  width: 34%;
   position: absolute;
-  left: 19%;
+  left: 7%;
   display: grid;
   place-items: center;
 }
@@ -132,7 +135,7 @@ h1.logo a {
 
 .main-context {
   position: absolute;
-  left: 440px;
+  left: 45%;
   top: 350px;
 }
 
@@ -140,8 +143,75 @@ h1.logo a {
   font-size: 6rem;
 }
 
+.main-context p {
+  font-size: 23px;
+  margin-bottom: 30px;
+  color: black;
+}
 
-.main-context p{
-    font-size: 23px;
-    margin-bottom: 30px;
+.btn .active,
+.btn :hover {
+  background-color: #0050ff;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+}
+
+.btn .active {
+  color: white;
+}
+
+.btn .active:hover {
+  background: white;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #0050ff;
+  color: black;
+}
+
+.btn button {
+  width: 110px;
+  height: 30px;
+  border-radius: 40px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+button:nth-child(2) {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.main-context p:nth-last-of-type(1){
+  font-size: 14px;
+  width: 350px;
+  margin-top: 70px;
+  font-weight: 300;
+}
+
+.footer{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  position: relative;
+  background-color: #ffff;
+  align-items: center;
+  justify-content: right;
+  right: 100px;
+  gap: 40px;
+}
+
+.col p{
+  text-align: center;
+  font-size: 15px;
+}
+
+.col a{
+  font-size: 14px;
+  font-weight: 200;
+  color: inherit;
+}
+
+.col .fa-brands{
+  margin-right: 10px;
 }
