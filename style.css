@@ -260,7 +260,6 @@ button:nth-child(2) {
   }
   .nav-menu {
     position: fixed;
-    /* left: 100%; */
     bottom: 100%;
     left: 0;
     gap: 20px;
@@ -285,7 +284,7 @@ button:nth-child(2) {
     padding-top: 100px;
     width: 100%;
     margin-top: 400px;
-    height: 480px;
+    height: 430px;
     position: relative;
   }
 
@@ -335,6 +334,7 @@ button:nth-child(2) {
 
   button:nth-child(2) {
     background-color: transparent;
+    color: black;
   }
 
   .btn {
@@ -347,7 +347,7 @@ button:nth-child(2) {
     height: 35px;
     border-radius: 40px;
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
   }
 
   .social-icon {
@@ -362,7 +362,7 @@ button:nth-child(2) {
   }
 
   .main-context h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
 .btn-2{
@@ -370,12 +370,12 @@ button:nth-child(2) {
 }
 
   .main-context p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .main-context p:nth-last-of-type(1) {
-    font-size: 17px;
-    width: 300px;
+    font-size: 15px;
+    width: 250px;
     margin-top: 20px;
     font-weight: 300;
   }
@@ -408,10 +408,11 @@ button:nth-child(2) {
     margin-top: 130px;
   }
 
+  
+
   .col a {
     font-size: 14px;
     font-weight: 200;
-    width: 30px;
     color: black;
   }
 
