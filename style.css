@@ -332,9 +332,6 @@ button:nth-child(2) {
     margin-bottom: 50px;
   }
 
-  .btn-2 {
-    display: none;
-  }
 
   button:nth-child(2) {
     background-color: transparent;
@@ -349,7 +346,6 @@ button:nth-child(2) {
     width: 140px;
     height: 35px;
     border-radius: 40px;
-    margin-right: 10px;
     font-size: 15px;
     font-weight: 550;
   }
@@ -369,6 +365,9 @@ button:nth-child(2) {
     font-size: 4rem;
     margin-bottom: 10px;
   }
+.btn-2{
+  display: none;
+}
 
   .main-context p {
     font-size: 25px;
