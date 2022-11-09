@@ -81,8 +81,23 @@ h1.logo a {
   font-size: 15px;
 }
 
+.hambuger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: blue;
+}
+
 /* body */
-.main-context{
+.main-context {
   min-height: 100px;
   position: absolute;
 }
@@ -110,11 +125,19 @@ h1.logo a {
   margin: 23px 0;
 }
 
+.text-align{
+  text-align: center;
+}
+
 .line {
   width: 50px;
   height: 1.5px;
   background-color: blue;
   margin: 20px 0;
+}
+
+.btn-1{
+  display: none;
 }
 
 .appendix p {
@@ -182,14 +205,14 @@ button:nth-child(2) {
   border: 1px solid black;
 }
 
-.main-context p:nth-last-of-type(1){
+.main-context p:nth-last-of-type(1) {
   font-size: 14px;
   width: 350px;
   margin-top: 70px;
   font-weight: 300;
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 150px;
   display: flex;
@@ -201,17 +224,183 @@ button:nth-child(2) {
   gap: 40px;
 }
 
-.col p{
+.col p {
   text-align: center;
   font-size: 15px;
 }
 
-.col a{
+.col a {
   font-size: 14px;
   font-weight: 200;
   color: inherit;
 }
 
-.col .fa-brands{
+.col .fa-brands {
   margin-right: 10px;
+}
+
+/* media query for about me page */
+
+@media screen and (max-width: 768px) {
+  /* header media q uery */
+  .hambuger-menu {
+    display: block;
+  }
+
+  .hambuger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    /* left: 100%; */
+    bottom: 100%;
+    left: 0;
+    gap: 20px;
+    flex-direction: column;
+    background-color: var(--primary-backgroundcolor);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu a {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .nav-menu.active {
+    bottom: 0;
+  }
+
+  .side-bar {
+    padding-top: 100px;
+    width: 100%;
+    margin-top: 400px;
+    height: 480px;
+    position: relative;
+  }
+
+  .appendix {
+    top: 200px;
+    background-color: var(--primary-backgroundcolor);
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    display: grid;
+    place-items: center;
+  }
+
+  .appendix img {
+    border-radius: 50%;
+    width: 150px;
+    margin: 23px 0;
+  }
+
+  .text-align{
+    display: flex;
+    font-size: 15px;
+    gap: 5px;
+  }
+
+  .appendix p {
+   display: none;
+  }
+  
+
+  .btn-1{
+    display: block;
+  }
+
+  .line {
+    width: 70px;
+  }
+
+  .btn-1{
+    margin-bottom: 30px;
+  }
+
+  .btn-2{
+    display: none;
+  }
+
+  button:nth-child(2) {
+    background-color: transparent;
+  }
+
+  .social-icon{
+    position: relative;
+    bottom: 15px;
+  }
+
+  .main-context {
+    position: absolute;
+    top: 590px;
+    left: 10%;
+  }
+
+  .main-context h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+
+  .main-context p {
+    font-size: 25px;
+  }
+
+  .main-context p:nth-last-of-type(1) {
+    font-size: 17px;
+    width: 300px;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+
+  .footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    padding: 0 10%;
+    right: 0;
+    align-items: flex-start;
+    background-color: #ffff;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .col p {
+    text-align: start;
+    font-size: 15px;
+  }
+
+  .col-1{
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .col-2{
+    margin-top: 130px;
+  }
+  
+
+  .col a {
+    font-size: 14px;
+    font-weight: 200;
+    width: 30px;
+    color: black;
+  }
+  
+  .col .fa-brands {
+    margin-right: 10px;
+  }
 }
