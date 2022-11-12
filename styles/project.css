@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,800&display=swap");
+
+:root {
+  --secondary-backgoundcolor: #e6dace;
+  --primary-backgroundcolor: #f4ece6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+/* header */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+  background-color: white;
+}
+
+.nav .container {
+  display: flex;
+  padding: 50px 50px;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
+}
+
+.blue-box {
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  gap: 10px;
+}
+
+.align-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: blue;
+}
+
+h1.logo :hover {
+  color: black;
+}
+
+h1.logo a {
+  font-size: 27px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  padding: 7px 7px;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.hambuger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: blue;
+}
+
+body {
+  background-color: var(--secondary-backgoundcolor);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+body a {
+  color: black;
+}
+
+.project {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.container {
+  padding-top: 250px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+
+.block h2 {
+  font-size: 2rem;
+}
+
+.content {
+  background-color: white;
+  margin-bottom: 70px;
+  display: flex;
+  padding-left: 30px;
+  gap: 8px;
+}
+
+.content img {
+  width: 374px;
+  padding-bottom: 10px;
+}
+
+.context h2 {
+  color: blue;
+  margin-top: 60px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.context p {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.col .fa-brands {
+  margin-right: 10px;
+}
+
+.col a {
+  font-size: 14px;
+  font-weight: 200;
+  color: inherit;
+}
+
+.col p {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  background-color: #ffff;
+  align-items: center;
+  justify-content: right;
+  gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .hambuger-menu {
+    display: block;
+  }
+
+  .hambuger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    gap: 20px;
+    flex-direction: column;
+    background-color: var(--primary-backgroundcolor);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-menu a {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .nav-menu.active {
+    bottom: 0;
+  }
+
+
+  .content {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .content img {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .context {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .project {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
