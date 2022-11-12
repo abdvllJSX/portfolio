@@ -220,7 +220,7 @@ button:nth-child(2) {
   background-color: #ffff;
   align-items: center;
   justify-content: right;
-  right: 100px;
+  padding-right: 100px;
   gap: 40px;
 }
 
@@ -236,7 +236,7 @@ button:nth-child(2) {
 }
 
 .col .fa-brands {
-  margin-right: 10px;
+   margin-right: 10px;
 }
 
 /* media query for about me page */
