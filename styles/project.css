@@ -252,4 +252,8 @@ footer {
     padding-right: 20px;
   }
 
+  .col p {
+    text-align: start;
+  }
+
 }
