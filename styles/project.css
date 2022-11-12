@@ -132,6 +132,10 @@ body a {
   font-size: 2rem;
 }
 
+.project{
+  padding-bottom: 20px;
+}
+
 .content {
   background-color: white;
   margin-bottom: 70px;
@@ -181,6 +185,11 @@ footer {
   justify-content: right;
   gap: 40px;
 }
+
+.col-2a {
+  margin-right: 70px;
+}
+
 
 @media screen and (max-width: 768px) {
 
