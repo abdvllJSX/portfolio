@@ -172,22 +172,40 @@ h1.logo a {
   color: black;
 }
 
-.btn .active,
-.btn :hover {
+.btn-2 a button {
+  background-color: white;
+}
+
+.active,
+.active2 a:hover {
   background-color: #0050ff;
   transition: 0.3s ease-in-out;
   color: white;
   border: none;
 }
 
-.btn .active {
+/* .active{
+  background-color: blue;
+  border: none;
+  text-decoration: none;
+} */
+.active a {
+  text-decoration: none;
   color: white;
 }
 
-.btn .active:hover {
+.btn a .active {
+  color: white;
+}
+
+.active:hover {
   background: white;
   transition: 0.3s ease-in-out;
   border: 2px solid #0050ff;
+  color: black;
+}
+
+.active a:hover{
   color: black;
 }
 
@@ -200,7 +218,7 @@ h1.logo a {
   font-weight: 400;
 }
 
-button:nth-child(2) {
+button :nth-child(2) {
   background-color: white;
   border: 1px solid black;
 }
@@ -236,7 +254,7 @@ button:nth-child(2) {
 }
 
 .col .fa-brands {
-   margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* media query for about me page */
@@ -331,7 +349,6 @@ button:nth-child(2) {
     margin-bottom: 50px;
   }
 
-
   button:nth-child(2) {
     background-color: transparent;
     color: black;
@@ -365,9 +382,9 @@ button:nth-child(2) {
     font-size: 3rem;
     margin-bottom: 10px;
   }
-.btn-2{
-  display: none;
-}
+  .btn-2 {
+    display: none;
+  }
 
   .main-context p {
     font-size: 20px;
@@ -403,7 +420,6 @@ button:nth-child(2) {
     top: 0;
     margin-top: 20px;
   }
-  
 
   .col a {
     font-size: 14px;
