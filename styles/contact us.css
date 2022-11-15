@@ -131,7 +131,7 @@ form button {
     border-radius: 40px;
 }
 
-button a{
+button {
     text-decoration: none;
     color: white;
     text-transform: capitalize;

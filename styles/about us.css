@@ -172,55 +172,45 @@ h1.logo a {
   color: black;
 }
 
-.btn-2 a button {
-  background-color: white;
+.btn-2{
+  margin-top: 40px;
 }
 
-.active,
-.active2 a:hover {
-  background-color: #0050ff;
-  transition: 0.3s ease-in-out;
-  color: white;
-  border: none;
+
+
+.btn a button{
+  width: 120px;
+  height: 35px;
+  border-radius: 35px;
+  font-weight: 530;
+  cursor: pointer;
 }
 
-/* .active{
+.btn .active{
   background-color: blue;
   border: none;
-  text-decoration: none;
-} */
-.active a {
-  text-decoration: none;
+  margin-right: 12px;
   color: white;
 }
 
-.btn a .active {
-  color: white;
-}
-
-.active:hover {
-  background: white;
-  transition: 0.3s ease-in-out;
-  border: 2px solid #0050ff;
-  color: black;
-}
-
-.active a:hover{
-  color: black;
-}
-
-.btn button {
-  width: 110px;
-  height: 30px;
-  border-radius: 40px;
-  margin-right: 10px;
-  text-transform: capitalize;
-  font-weight: 400;
-}
-
-button :nth-child(2) {
+.active2{
   background-color: white;
   border: 1px solid black;
+}
+
+.active:hover{
+  background-color: white;
+  border: 2px solid blue;
+  transition: 0.3s ease-in-out;
+  color: black;
+  font-weight: 540;
+}
+
+.active2:hover{
+  background-color: blue;
+  border: none;
+  transition: 0.3s ease-in-out;
+  color: white;
 }
 
 .main-context p:nth-last-of-type(1) {
@@ -229,6 +219,8 @@ button :nth-child(2) {
   margin-top: 70px;
   font-weight: 300;
 }
+
+
 
 .footer {
   width: 100%;
@@ -337,8 +329,12 @@ button :nth-child(2) {
     display: block;
   }
 
-  .btn .active:hover {
+   .active:hover {
     background: transparent;
+  }
+
+  .active2{
+    background: var(--primary-backgroundcolor);
   }
 
   .line {
