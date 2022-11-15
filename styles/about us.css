@@ -39,7 +39,6 @@ body {
   height: 15px;
   width: 15px;
   background-color: blue;
-  gap: 10px;
 }
 
 .align-item {
@@ -280,6 +279,11 @@ h1.logo a {
     text-align: center;
     transition: 0.3s;
   }
+
+  .nav .container {
+    padding: 50px 30px;
+  }
+  
 
   .nav-menu a {
     font-weight: 600;

@@ -16,136 +16,143 @@ body {
   color: black;
 }
 
-.contact{
-    background-color: var(--secondary-backgoundcolor);
-    padding-left: 18%;
-    padding-right: 18%;
-    padding-bottom: 10%;
+.contact {
+  background-color: var(--secondary-backgoundcolor);
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-bottom: 10%;
 }
 
-.align-item{
-    gap: 8px;
+.align-item2 {
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.align-item h2{
-    font-size: 2.2em;
+.align-item2 h2 {
+  font-size: 2.2em;
 }
 
-.blue-box{
-    width: 20px;
-    height: 20px;
+.blue-box {
+  width: 20px;
+  height: 20px;
 }
 
-form{
-    margin-top: 70px;
-    background-color: white;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 150px;
+form {
+  margin-top: 70px;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 150px;
 }
 
-form p{
-    font-weight: 500;
+form p {
+  font-weight: 500;
 }
 
-.align{
-    padding-top: 9%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
+.align {
+  padding-top: 9%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
-    .align{
-        flex-direction: column;
-    }
-    
-    .col-d{
-        margin-top: 30px;
-    }
+  .align {
+    flex-direction: column;
+  }
 
-    .contact{
-        padding-left: 8%;
-        padding-right: 8%;
-    }
+  .col-d {
+    margin-top: 30px;
+  }
+
+  .contact {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .nav .container {
+    padding: 50px 30px;
+  }
 }
 
-.colll input{
-    width: 250px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    color: blue;
+.colll input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  color: blue;
 }
 
-.colll input:hover:focus{
-    border-bottom: 2px solid blue;
+.colll input:hover:focus {
+  border-bottom: 2px solid blue;
 }
 
-.colll input:invalid{
-    border-bottom: 1px solid red;
+.colll input:invalid {
+  border-bottom: 1px solid red;
 }
 
-textarea{
-    width: 100%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid black;
-    color: blue;
-    font-weight: 400;
-    margin-bottom: 10px;
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  color: blue;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-textarea:hover:focus{
-    border-bottom: 2px solid blue;
+textarea:hover:focus {
+  border-bottom: 2px solid blue;
 }
 
-.row input{
-    width: 100%;
-    margin-bottom: 30px;
-    height: 40px;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    color: blue;
+.row input {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  color: blue;
 }
 
-.message input{
-    height: 100px;
+.message input {
+  height: 100px;
 }
 
-.row input:hover:focus{
-    border-bottom: 2px solid blue;  
+.row input:hover:focus {
+  border-bottom: 2px solid blue;
 }
 
-.row input:invalid{
-    border-bottom: 1px solid red;
+.row input:invalid {
+  border-bottom: 1px solid red;
 }
 
 form button {
-    width: 120px;
-    background-color: blue;
-    height: 40px;
-    border: none;
-    border-radius: 40px;
+  width: 120px;
+  background-color: blue;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
 }
 
 button {
-    text-decoration: none;
-    color: white;
-    text-transform: capitalize;
-    font-size: 15px;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
 }
 
-button:hover{
-background-color: white;
-border: 2px solid blue;
-transition: 0.2s all;
-color: black;
+button:hover {
+  background-color: white;
+  border: 2px solid blue;
+  transition: 0.2s all;
+  color: black;
 }
 
-button a:hover{
-    color: black;
-    transition: 0.2 all;
+button a:hover {
+  color: black;
+  transition: 0.2 all;
 }
