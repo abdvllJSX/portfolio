@@ -132,7 +132,7 @@ body a {
   font-size: 2rem;
 }
 
-.project{
+.project {
   padding-bottom: 20px;
 }
 
@@ -178,21 +178,17 @@ body a {
 
 footer {
   width: 100%;
-  height: 150px;
+  padding: 40px 30px;
   display: flex;
   background-color: #ffff;
-  align-items: center;
-  justify-content: right;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .col-2a {
   margin-right: 70px;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .hambuger-menu {
     display: block;
   }
@@ -234,13 +230,16 @@ footer {
     bottom: 0;
   }
 
+  .align-item h1 a {
+    font-size: 17px;
+  }
 
   .content {
     flex-direction: column;
     padding-left: 0;
   }
 
-  .project{
+  .project {
     padding-bottom: 20px;
   }
 
@@ -259,14 +258,18 @@ footer {
     padding-right: 10%;
   }
 
-   .footer {
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+  .footer {
+    padding: 50px 10px;
   }
 
   .col p {
     text-align: start;
   }
+}
 
+
+@media screen and (min-width: 280px) and (max-width: 281px) {
+  .context p {
+    margin-bottom: 10px;
+  }
 }

@@ -156,3 +156,13 @@ button a:hover {
   color: black;
   transition: 0.2 all;
 }
+
+@media screen and (min-width: 280px) and (max-width: 281px) {
+  .colll input {
+    width: 150px;
+  }
+
+  .footer{
+    padding: 40px 10px;
+  }
+}

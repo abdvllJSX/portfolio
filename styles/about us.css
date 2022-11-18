@@ -171,13 +171,11 @@ h1.logo a {
   color: black;
 }
 
-.btn-2{
+.btn-2 {
   margin-top: 40px;
 }
 
-
-
-.btn a button{
+.btn a button {
   width: 120px;
   height: 35px;
   border-radius: 35px;
@@ -185,19 +183,19 @@ h1.logo a {
   cursor: pointer;
 }
 
-.btn .activate{
+.btn .activate {
   background-color: blue;
   border: none;
   margin-right: 12px;
   color: white;
 }
 
-.active2{
+.active2 {
   background-color: white;
   border: 1px solid black;
 }
 
-.activate:hover{
+.activate:hover {
   background-color: white;
   border: 2px solid blue;
   transition: 0.3s ease-in-out;
@@ -205,7 +203,7 @@ h1.logo a {
   font-weight: 540;
 }
 
-.active2:hover{
+.active2:hover {
   background-color: blue;
   border: none;
   transition: 0.3s ease-in-out;
@@ -219,9 +217,7 @@ h1.logo a {
   font-weight: 300;
 }
 
-
-
-.footer {
+/* .footer {
   width: 100%;
   height: 150px;
   display: flex;
@@ -246,11 +242,22 @@ h1.logo a {
 
 .col .fa-brands {
   margin-right: 10px;
+} */
+
+.footer {
+  display: flex;
+  padding: 70px 20px;
+  justify-content: space-between;
+}
+.col a {
+  font-size: 14px;
+  font-weight: 200;
+  color: inherit;
 }
 
 /* media query for about me page */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 282px) and (max-width: 768px) {
   /* header media q uery */
   .hambuger-menu {
     display: block;
@@ -280,10 +287,13 @@ h1.logo a {
     transition: 0.3s;
   }
 
+  .align-item h1 a {
+    font-size: 17px;
+  }
+
   .nav .container {
     padding: 50px 30px;
   }
-  
 
   .nav-menu a {
     font-weight: 600;
@@ -305,12 +315,13 @@ h1.logo a {
   .appendix {
     top: 200px;
     background-color: var(--primary-backgroundcolor);
-    width: 80%;
+    width: 70%;
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 15%;
+    right: 15%;
     display: grid;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .appendix img {
@@ -325,19 +336,28 @@ h1.logo a {
     gap: 5px;
   }
 
+  .btn a button {
+    width: 100px;
+    height: 30px;
+    border-radius: 35px;
+    font-weight: 530;
+    cursor: pointer;
+  }
+
   .appendix p {
     display: none;
   }
 
   .btn-1 {
-    display: block;
+    display: flex;
+    margin-bottom: 50px;
   }
 
-   .activate:hover {
+  .activate:hover {
     background: transparent;
   }
 
-  .active2{
+  .active2 {
     background: var(--primary-backgroundcolor);
   }
 
@@ -345,18 +365,9 @@ h1.logo a {
     width: 70px;
   }
 
-  .btn-1 {
-    margin-bottom: 50px;
-  }
-
   button:nth-child(2) {
     background-color: transparent;
     color: black;
-  }
-
-  .btn {
-    display: flex;
-    gap: 10px;
   }
 
   .btn button {
@@ -367,9 +378,15 @@ h1.logo a {
     font-weight: 500;
   }
 
+  .btn-2 {
+    display: none;
+  }
+
   .social-icon {
-    position: relative;
+    position: absolute;
     bottom: 15px;
+    top: 90%;
+    width: 100%;
   }
 
   .main-context {
@@ -381,9 +398,6 @@ h1.logo a {
   .main-context h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-  }
-  .btn-2 {
-    display: none;
   }
 
   .main-context p {
@@ -429,5 +443,161 @@ h1.logo a {
 
   .col .fa-brands {
     margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 281px) {
+  .hambuger-menu {
+    display: block;
+  }
+
+  .hambuger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hambuger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hambuger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    gap: 20px;
+    flex-direction: column;
+    background-color: var(--primary-backgroundcolor);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .align-item h1 a {
+    font-size: 17px;
+  }
+
+  .nav .container {
+    padding: 50px 30px;
+  }
+
+  .nav-menu a {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .nav-menu.active {
+    bottom: 0;
+  }
+
+  .side-bar {
+    padding-top: 100px;
+    width: 100%;
+    margin-top: 400px;
+    height: 430px;
+    position: relative;
+  }
+
+  .appendix {
+    top: 200px;
+    background-color: var(--primary-backgroundcolor);
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .appendix img {
+    border-radius: 50%;
+    width: 100px;
+    margin: 23px 0;
+  }
+
+  .text-align {
+    display: flex;
+    font-size: 16px;
+    gap: 5px;
+  }
+
+  .btn a button {
+    width: 100px;
+    height: 30px;
+    border-radius: 35px;
+    font-weight: 530;
+    cursor: pointer;
+  }
+
+  .appendix p {
+    display: none;
+  }
+
+  .btn-1 {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .activate:hover {
+    background: transparent;
+  }
+
+  .active2 {
+    background: var(--primary-backgroundcolor);
+  }
+
+  .line {
+    width: 70px;
+  }
+
+  .btn button {
+    width: 140px;
+    height: 35px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .btn-2 {
+    display: none;
+  }
+
+  .social-icon {
+    position: absolute;
+    bottom: 15px;
+    top: 90%;
+    width: 100%;
+  }
+
+  .main-context {
+    position: absolute;
+    top: 600px;
+    left: 10%;
+  }
+
+  .main-context h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .main-context p {
+    font-size: 20px;
+  }
+
+  .main-context p:nth-last-of-type(1) {
+    font-size: 15px;
+    width: 250px;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    padding: 40px 10px;
   }
 }
